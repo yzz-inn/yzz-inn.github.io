@@ -10,7 +10,7 @@
 <meta property='og:description' content='本篇博客持续记录本学期Linux学习进度'>
 <meta property='og:url' content='https://yzz-inn.github.io/p/other/'>
 <meta property='og:site_name' content='Yin&#39;s blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-12-14T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-12-14T00:00:00&#43;00:00'/><meta property='og:image' content='https://yzz-inn.github.io/p/other/the-creative-exchange-d2zvqp3fpro-unsplash.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-12-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-12-10T00:00:00&#43;00:00'/><meta property='og:image' content='https://yzz-inn.github.io/p/other/the-creative-exchange-d2zvqp3fpro-unsplash.jpg' />
 <meta name="twitter:title" content="Other">
 <meta name="twitter:description" content="本篇博客持续记录本学期Linux学习进度"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://yzz-inn.github.io/p/other/the-creative-exchange-d2zvqp3fpro-unsplash.jpg' />
@@ -289,6 +289,11 @@
     <li><a href="#文件系统命令">文件系统命令</a>
       <ol>
         <li><a href="#目录操作命令">目录操作命令</a></li>
+        <li><a href="#文件操作命令">文件操作命令</a></li>
+        <li><a href="#通配符的使用">通配符的使用</a></li>
+        <li><a href="#文件内容操作命令">文件内容操作命令</a></li>
+        <li><a href="#打包和解包">打包和解包</a></li>
+        <li><a href="#链接">链接</a></li>
       </ol>
     </li>
   </ol>
@@ -348,7 +353,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Dec 14, 2022</time>
+                <time class="article-time--published">Dec 10, 2022</time>
             </div>
         
 
@@ -381,16 +386,17 @@
     <h2 id="文件系统命令">文件系统命令</h2>
 <h3 id="目录操作命令">目录操作命令</h3>
 <ul>
-<li>pwd：显示当前工作目录的绝对路径</li>
-<li>cd :更改工作目录路径
+<li><strong>pwd</strong>：显示当前工作目录的绝对路径</li>
+<li><strong>cd</strong> :更改工作目录路径
 <ul>
-<li>.    代表当前目录</li>
-<li>..   代表上一层目录</li>
-<li>~    代表家目录</li>
+<li><strong>.</strong>    :代表当前目录</li>
+<li><strong>..</strong>   :代表上一层目录</li>
+<li><strong>~</strong>    :代表家目录</li>
 </ul>
 </li>
-<li>mkdir: 创建目录</li>
-<li>ls   : 列出目录和文件信息
+<li><strong>mkdir</strong>: 创建目录</li>
+<li><strong>rmdir</strong>:删除空目录</li>
+<li><strong>ls</strong>   : 列出目录和文件信息
 <ul>
 <li>-l : 以详细信息的形式展示出当前目录的文件</li>
 <li>-a ：显示当前目录中的全部文件</li>
@@ -400,6 +406,192 @@
 </ul>
 </li>
 </ul>
+<hr>
+<h3 id="文件操作命令">文件操作命令</h3>
+<ul>
+<li><strong>touch</strong>：创建空文件、更改文件时间</li>
+<li><strong>rm</strong> ：删除文件或目录（一般使用rm -rf删除目录）
+<ul>
+<li>-f：强制删除，即使文件属性设为只读，也直接删除，无需逐一确认</li>
+<li>-r：递归删除目录</li>
+</ul>
+</li>
+<li><strong>cp</strong> ：复制文件或目录（例：cp -a /etc/example.md /usr/local   <em>//将etc目录下的example.md文件复制到/usr/local目录下</em>）
+<ul>
+<li>-a：通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容</li>
+</ul>
+</li>
+<li><strong>mv</strong> ：改名、移动文件和目录<br>
+<a class="link" href="https://postimg.cc/xk4mdNGj"  target="_blank" rel="noopener"
+    ><img src="https://i.postimg.cc/PxtQ2mPD/image.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image.png"
+	
+	
+></a></li>
+</ul>
+<hr>
+<h3 id="通配符的使用">通配符的使用</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">通配符</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>？</strong></td>
+<td style="text-align:left">匹配任意一个字符</td>
+<td style="text-align:left">ls  ?.txt（查询带.txt后缀的一个文件)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>*</strong></td>
+<td style="text-align:left">匹配任意多个字符</td>
+<td style="text-align:left">ls  *.txt（查询带.txt后缀的所有文件)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>[]</strong></td>
+<td style="text-align:left">相当于或的意思</td>
+<td style="text-align:left">ls  [abc].txt（查询带.txt后缀并且有任意一个abc字母的文件)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>-</strong></td>
+<td style="text-align:left">代表一个范围，比如a-z</td>
+<td style="text-align:left">ls [a-v].txt（查询带.txt后缀并且有任意一个a到v之间字母的文件)</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h3 id="文件内容操作命令">文件内容操作命令</h3>
+<ul>
+<li><strong>which</strong>：用来搜索二进制文件、可执行文件或者shell命令行的位置</li>
+<li><strong>cat</strong>：显示文件内容、连接文件内容（格式：cat 文件1 文件2 &hellip;）</li>
+<li><strong>head</strong>：显示指定文件的前若干行（格式：head -n 行数  文件）</li>
+<li><strong>tail</strong>：查看文件末尾数据（格式： -n 行数  文件）</li>
+<li><strong>find</strong>：查找文件或目录（格式：find [查找范围] [选项])
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">选项</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">-name  &ldquo;文件名&rdquo;</td>
+<td style="text-align:left">匹配文件的名称(支持通配符)</td>
+<td style="text-align:left">find /usr/local -name &ldquo;*.txt&rdquo;（查找/usr/local目录下的.txt文件)</td>
+</tr>
+<tr>
+<td style="text-align:left">-type  &lt;文件类型&gt;</td>
+<td style="text-align:left">匹配文件类型查找（f表示普通文件，d表示目录）</td>
+<td style="text-align:left">find /usr/local  -type f（查找/usr/local目录下的普通文件)</td>
+</tr>
+<tr>
+<td style="text-align:left">-size n[cKMG]</td>
+<td style="text-align:left">匹配文件的大小（+50k为查找超过50k的文件）</td>
+<td style="text-align:left">find /usr/local -size +1M（查找目录下超过1M的文件）</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li><strong>grep</strong>：搜索与字符串匹配的行（格式：grep &lt;命令&gt;   [被搜索的字符串] [查找位置]）
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">通配符</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>-i</strong></td>
+<td style="text-align:left">查找时忽略大小写</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>-n</strong></td>
+<td style="text-align:left">显示行号</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>-r</strong></td>
+<td style="text-align:left">递归搜索子目录</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>-v</strong></td>
+<td style="text-align:left">反转查找，输出与查找条件不相符的行</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+</ul>
+<hr>
+<h3 id="打包和解包">打包和解包</h3>
+<ul>
+<li><strong>打包</strong>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">打包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tar -czvf 打包文件名.tar.gz 源文件或目录</td>
+</tr>
+<tr>
+<td style="text-align:left">tar -cjvf 打包文件名.tar.bz2 源文件或目录</td>
+</tr>
+<tr>
+<td style="text-align:left">tar -cJvf 打包文件名.tar.xz 源文件或目录</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li><strong>解包</strong>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:left">解包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">tar -xzvf 打包文件名.tar.gz  -C 解压目录</td>
+</tr>
+<tr>
+<td style="text-align:left">tar -xjvf 打包文件名.tar.bz2  -C 解压目录</td>
+</tr>
+<tr>
+<td style="text-align:left">tar -xJvf 打包文件名.tar.xz  -C 解压目录</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li><strong>zip格式</strong>
+<ul>
+<li>安装：sudo yum install zip unzip</li>
+<li>打包：zip -r 文件.zip 源文件或目录（-r：表示递归打包目录）</li>
+<li>解包：unzip 文件.zip -d 解压目录</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="链接">链接</h3>
+<ul>
+<li><strong>软链接</strong>（格式：ln -s 源文件  目标文件)</li>
+</ul>
+<p>    符号链接等价与建立了快捷方式。符号链接原文件被删除时，链接文件将失效；如果重新给一个同路径同名文件，链接文件又会恢复。</p>
+<ul>
+<li><strong>硬链接</strong>（格式：ln 源文件  目标文件）</li>
+</ul>
+<p>    链接文件和被链接文件必须位于同一个文件系统中，同时不能建立指向目录的硬链接。 硬链接文件对删除哪个都不影响对方，只是指定链接计数减少而已，减为0时文件才从硬盘消失。</p>
 </section>
 
 

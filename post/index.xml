@@ -6,36 +6,7 @@
         <description>Recent content in Posts on Yin&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yzz-inn.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Other</title>
-        <link>https://yzz-inn.github.io/p/other/</link>
-        <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://yzz-inn.github.io/p/other/</guid>
-        <description>&lt;img src="https://yzz-inn.github.io/p/other/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Other" /&gt;&lt;h2 id=&#34;文件系统命令&#34;&gt;文件系统命令&lt;/h2&gt;
-&lt;h3 id=&#34;目录操作命令&#34;&gt;目录操作命令&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;pwd：显示当前工作目录的绝对路径&lt;/li&gt;
-&lt;li&gt;cd :更改工作目录路径
-&lt;ul&gt;
-&lt;li&gt;.    代表当前目录&lt;/li&gt;
-&lt;li&gt;..   代表上一层目录&lt;/li&gt;
-&lt;li&gt;~    代表家目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;mkdir: 创建目录&lt;/li&gt;
-&lt;li&gt;ls   : 列出目录和文件信息
-&lt;ul&gt;
-&lt;li&gt;-l : 以详细信息的形式展示出当前目录的文件&lt;/li&gt;
-&lt;li&gt;-a ：显示当前目录中的全部文件&lt;/li&gt;
-&lt;li&gt;-d ：查看目录属性&lt;/li&gt;
-&lt;li&gt;-t ：按照创建时间顺序列出文件&lt;/li&gt;
-&lt;li&gt;-h : 与-l一起，以易于阅读的形式输出文件大小&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yzz-inn.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux-study(3)</title>
         <link>https://yzz-inn.github.io/p/linux-study3/</link>
         <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
@@ -138,7 +109,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ps aux | grep nginx      //查看Nginx进程，确认启动成功
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://s3.bmp.ovh/imgs/2022/12/20/4524545fb9f4dc10.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://s3.bmp.ovh/imgs/2022/12/19/462888a4a32c965a.png&#34;
 	
 	
 	
@@ -257,7 +228,7 @@ source /etc/profile
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new posts/linux-study.md              //接着就进入content/posts用markdown编写        
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;启动成功
+&lt;/div&gt;&lt;p&gt;启动成功&lt;br&gt;
 &lt;img src=&#34;https://s3.bmp.ovh/imgs/2022/12/20/e15fdb1384a9af24.png&#34;
 	
 	
@@ -274,9 +245,11 @@ source /etc/profile
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo --theme=hugo-theme-stack --baseURL=https://yzz-inn.github.io/   //执行，生成public目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin https://github.com/yzz-inn/yzz-inn.github.io.git
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add -A
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;ll&amp;#34;
@@ -386,8 +359,8 @@ source /etc/profile
 	loading=&#34;lazy&#34;
 	
 	
-&gt;
-2.查看并复制到Gitee进行公钥添加&lt;/p&gt;
+&gt;&lt;/p&gt;
+&lt;p&gt;2.查看并复制到Gitee进行公钥添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -726,6 +699,222 @@ source /etc/profile
 	
 	
 &gt;&lt;/a&gt;&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Other</title>
+        <link>https://yzz-inn.github.io/p/other/</link>
+        <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://yzz-inn.github.io/p/other/</guid>
+        <description>&lt;img src="https://yzz-inn.github.io/p/other/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Other" /&gt;&lt;h2 id=&#34;文件系统命令&#34;&gt;文件系统命令&lt;/h2&gt;
+&lt;h3 id=&#34;目录操作命令&#34;&gt;目录操作命令&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pwd&lt;/strong&gt;：显示当前工作目录的绝对路径&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cd&lt;/strong&gt; :更改工作目录路径
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;.&lt;/strong&gt;    :代表当前目录&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;..&lt;/strong&gt;   :代表上一层目录&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;~&lt;/strong&gt;    :代表家目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mkdir&lt;/strong&gt;: 创建目录&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rmdir&lt;/strong&gt;:删除空目录&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ls&lt;/strong&gt;   : 列出目录和文件信息
+&lt;ul&gt;
+&lt;li&gt;-l : 以详细信息的形式展示出当前目录的文件&lt;/li&gt;
+&lt;li&gt;-a ：显示当前目录中的全部文件&lt;/li&gt;
+&lt;li&gt;-d ：查看目录属性&lt;/li&gt;
+&lt;li&gt;-t ：按照创建时间顺序列出文件&lt;/li&gt;
+&lt;li&gt;-h : 与-l一起，以易于阅读的形式输出文件大小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;文件操作命令&#34;&gt;文件操作命令&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;touch&lt;/strong&gt;：创建空文件、更改文件时间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rm&lt;/strong&gt; ：删除文件或目录（一般使用rm -rf删除目录）
+&lt;ul&gt;
+&lt;li&gt;-f：强制删除，即使文件属性设为只读，也直接删除，无需逐一确认&lt;/li&gt;
+&lt;li&gt;-r：递归删除目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cp&lt;/strong&gt; ：复制文件或目录（例：cp -a /etc/example.md /usr/local   &lt;em&gt;//将etc目录下的example.md文件复制到/usr/local目录下&lt;/em&gt;）
+&lt;ul&gt;
+&lt;li&gt;-a：通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mv&lt;/strong&gt; ：改名、移动文件和目录&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://postimg.cc/xk4mdNGj&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://i.postimg.cc/PxtQ2mPD/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image.png&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;通配符的使用&#34;&gt;通配符的使用&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;通配符&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;说明&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;例子&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;？&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;匹配任意一个字符&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;ls  ?.txt（查询带.txt后缀的一个文件)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;匹配任意多个字符&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;ls  *.txt（查询带.txt后缀的所有文件)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;[]&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;相当于或的意思&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;ls  [abc].txt（查询带.txt后缀并且有任意一个abc字母的文件)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;-&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;代表一个范围，比如a-z&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;ls [a-v].txt（查询带.txt后缀并且有任意一个a到v之间字母的文件)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;文件内容操作命令&#34;&gt;文件内容操作命令&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;which&lt;/strong&gt;：用来搜索二进制文件、可执行文件或者shell命令行的位置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cat&lt;/strong&gt;：显示文件内容、连接文件内容（格式：cat 文件1 文件2 &amp;hellip;）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;head&lt;/strong&gt;：显示指定文件的前若干行（格式：head -n 行数  文件）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tail&lt;/strong&gt;：查看文件末尾数据（格式： -n 行数  文件）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;find&lt;/strong&gt;：查找文件或目录（格式：find [查找范围] [选项])
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;选项&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;说明&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;例子&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-name  &amp;ldquo;文件名&amp;rdquo;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;匹配文件的名称(支持通配符)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;find /usr/local -name &amp;ldquo;*.txt&amp;rdquo;（查找/usr/local目录下的.txt文件)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-type  &amp;lt;文件类型&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;匹配文件类型查找（f表示普通文件，d表示目录）&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;find /usr/local  -type f（查找/usr/local目录下的普通文件)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;-size n[cKMG]&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;匹配文件的大小（+50k为查找超过50k的文件）&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;find /usr/local -size +1M（查找目录下超过1M的文件）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;grep&lt;/strong&gt;：搜索与字符串匹配的行（格式：grep &amp;lt;命令&amp;gt;   [被搜索的字符串] [查找位置]）
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;通配符&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;-i&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;查找时忽略大小写&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;-n&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;显示行号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;-r&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;递归搜索子目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;-v&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;反转查找，输出与查找条件不相符的行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;打包和解包&#34;&gt;打包和解包&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;打包&lt;/strong&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;打包&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;tar -czvf 打包文件名.tar.gz 源文件或目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;tar -cjvf 打包文件名.tar.bz2 源文件或目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;tar -cJvf 打包文件名.tar.xz 源文件或目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解包&lt;/strong&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;解包&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;tar -xzvf 打包文件名.tar.gz  -C 解压目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;tar -xjvf 打包文件名.tar.bz2  -C 解压目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;tar -xJvf 打包文件名.tar.xz  -C 解压目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;zip格式&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;安装：sudo yum install zip unzip&lt;/li&gt;
+&lt;li&gt;打包：zip -r 文件.zip 源文件或目录（-r：表示递归打包目录）&lt;/li&gt;
+&lt;li&gt;解包：unzip 文件.zip -d 解压目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;链接&#34;&gt;链接&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;软链接&lt;/strong&gt;（格式：ln -s 源文件  目标文件)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;    符号链接等价与建立了快捷方式。符号链接原文件被删除时，链接文件将失效；如果重新给一个同路径同名文件，链接文件又会恢复。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;硬链接&lt;/strong&gt;（格式：ln 源文件  目标文件）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;    链接文件和被链接文件必须位于同一个文件系统中，同时不能建立指向目录的硬链接。 硬链接文件对删除哪个都不影响对方，只是指定链接计数减少而已，减为0时文件才从硬盘消失。&lt;/p&gt;</description>
         </item>
         
     </channel>
